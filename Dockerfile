@@ -7,6 +7,8 @@ RUN python -m pip install https://storage.googleapis.com/tensorflow/linux/cpu/te
 
 RUN python -m pip install sklearn
 
+RUN python -m pip install tqdm
+
 RUN git clone https://github.com/minimaxir/textgenrnn.git /opt/textgenrnn
 
 CMD tail -f /dev/null
