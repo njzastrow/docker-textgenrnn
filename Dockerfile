@@ -1,5 +1,5 @@
 # Start writing your Dockerfile easily
-FROM python:3.6-slim-stretch
+FROM python:3.6-alpine3.11
 
 RUN apk update && \
     apk add --no-cache vim bash
