@@ -6,8 +6,8 @@ RUN apk update && \
 
 RUN apk add python3
 
-RUN pip install tensorflow
+RUN python3 -m pip install tensorflow
 
-RUN pip install sklearn
+RUN python3 -m pip install sklearn
 
 RUN git clone https://github.com/minimaxir/textgenrnn.git /opt/textgenrnn
