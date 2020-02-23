@@ -1,10 +1,8 @@
 # Start writing your Dockerfile easily
-FROM alpine:3.11
+FROM python:3.6-alpine
 
 RUN apk update && \
     apk add --no-cache vim bash
-
-RUN apk add python3.6
 
 RUN python3 -m pip install tensorflow
 
